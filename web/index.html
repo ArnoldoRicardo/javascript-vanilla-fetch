@@ -1,0 +1,85 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>SISU</title>
+        <link
+            rel="stylesheet"
+            href="./css/node_modules/flexboxgrid/css/flexboxgrid.min.css"
+        />
+        <link rel="stylesheet" href="./css/style.css" />
+    </head>
+    <body>
+        <div class="row center-xs">
+            <div class="col-xs-4">
+                <div class="box">
+                    <h1>Nuevo usuario</h1>
+                    <form action="">
+                        <div class="row">
+                            <div class="col-xs-2">
+                                <label for="nombre" class="box">Nombre:</label>
+                            </div>
+                            <div class="col-xs-10">
+                                <input
+                                    type="text"
+                                    name="nombre"
+                                    id="nombre"
+                                    class="box"
+                                />
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-2">
+                                <label for="edad" class="box">Edad:</label>
+                            </div>
+                            <div class="col-xs-10">
+                                <input type="number" name="edad" id="edad" class="box" />
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-2">
+                                <label for="pais" class="box">País:</label>
+                            </div>
+                            <div class="col-xs-10">
+                                <select id="pais" name="pais" class="box">
+                                    <option>Selecciona un valor</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-2">
+                                <label for="estado" class="box">Estado:</label>
+                            </div>
+                            <div class="col-xs-10">
+                                <select id="estado" name="estado" class="box">
+                                    <option>Selecciona un valor</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-2">
+                                <label for="ciudad" class="box">Ciudad:</label>
+                            </div>
+                            <div class="col-xs-10">
+                                <select id="ciudad" name="ciudad" class="box">
+                                    <option>Selecciona un valor</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <button id="enviar" class="box">Enviar</button>
+                            </div>
+                        </div>
+                    </form>
+                    <div class="errors"></div>
+                </div>
+            </div>
+        </div>
+
+        <script src="./js/newUser.js"></script>
+    </body>
+</html>
